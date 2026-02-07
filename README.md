@@ -13,7 +13,7 @@ Fortunately I found a way to use SASM's syntax features outside SASM, and this t
 
 ## Code, Build and Run
 This template has main file called "main.asm"  
-To build project adjust settings in Makefile
+To build project adjust settings in config.mk
 (CC, ARCH_SIZE, OUTPUT_TYPE)
 and then simply do
 ```sh
