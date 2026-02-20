@@ -1,4 +1,4 @@
-%include "io64.inc"
+%include "io.inc"
 
 section .text
 global main
@@ -13,6 +13,5 @@ main: ; entry point
   PRINT_DEC 4, ecx ; print 4 byte num from eax
   PRINT_CHAR 10 ; print 10 -> '\n'
   ; exit
-  mov edi, 0 ; exit code
-  mov eax, 60 ; exit syscall id
-  syscall
+  mov eax, 0 ; exit syscall id
+  ret
